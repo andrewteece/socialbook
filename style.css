@@ -1,4 +1,40 @@
-// https://piccalil.li/blog/a-modern-css-reset
+/* CSS CUSTOM PROPERTIES */
+
+:root {
+    --clr-neutral-600: hsl(0, 0%, 38%);
+    --clr-neutral-body: hsl(0, 0%, 94%); /* body color */
+    --clr-netural-bg: hsl(0, 0%, 100%); /* bg color */
+    
+    --clr-primary-400: hsl(223, 70%, 96%); 
+    --clr-secondary-400: hsl(0, 0%, 13%);
+
+    --clr-nav: hsl(214, 89%, 52%); /* nav color */ 
+
+
+    .dark-theme {
+        --body-color: hsl(0, 0%, 4%);
+        --nav-color: hsl(0, 0%, 0%);
+        --bg-color: hsl(0, 0%, 0%);
+    }
+
+    --ff-primary: 'Poppins', sans-serif;
+
+    --fs-900: 1.5625rem; /* 25px */
+    --fs-root: 1rem; /* 16px */ 
+    --fs-800: .9375rem; /* 15px */ 
+    --fs-700: .875rem; /* 14px */ 
+    --fs-600: .8125rem; /* 13px */ 
+    --fs-500: .75rem; /* 12px */ 
+    --fs-400: .625rem; /* 10px */ 
+    --fs-300: .5625rem; /* 9px */ 
+
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+}
+
+
+/* CSS RESET */
 
 /* Box sizing rules */
 *,
@@ -34,6 +70,7 @@ body {
 body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family: var(--ff-primary);
 }
 
 /* A elements that don't have a class get default styles */
@@ -63,4 +100,8 @@ picture {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+body {
+    background: var(--clr-neutral-500);
 }
